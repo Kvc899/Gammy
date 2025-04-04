@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gammy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      h1, h2, h3 {
+        color: #333;
+      }
+
+      .catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .game-item {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .game-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .game-item button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .game-item button:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+    <script>
+      function redirectToGame1() {
+        window.location.href = "main_menu.html";
+      }
+
+      function redirectToGame2() {
+        window.location.href = "tetris.html";
+      }
+
+      function redirectToGame3() {
+        window.location.href = "Sokoban.html";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Background Music -->
+    <audio autoplay loop>
+      <source src="Jetpack Joyride.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h1>Welcome To Gammy</h1>
+    <h2>Play a variety of games for FREE!</h2>
+
+    <div class="catalog">
+      <!-- Game 1 -->
+      <div class="game-item">
+        <img src="g1i1.png" alt="Car-Race-Master">
+        <h3>Car-Race-Master</h3>
+        <button onclick="redirectToGame1()">Play Now</button>
+        <p>All rights reserved Keshav R Raju, Vishnu S Reddy</p>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="game-item">
+        <img src="g2i2.png" alt="Tetris">
+        <h3>Tetris</h3>
+        <button onclick="redirectToGame2()">Play Now</button>
+        <p>All rights reserved Straker (Github Gist)</p>
+      </div>
+
+      <!-- Game 3 -->
+      <div class="game-item">
+        <img src="g3i3.png" alt="Sokoban">
+        <h3>Sokoban</h3>
+        <button onclick="redirectToGame3()">Play Now</button>
+        <p>All rights reserved JcKarter</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Gammy. All rights reserved.</p>
+      <p>
+        Follow us on: 
+        <a href="https://github.com/KVC899" target="_blank" style="color: #007bff; text-decoration: none;">GitHub</a> | 
+      </p>
+      <p>Contact me: <a href="mailto:karstencronin@gmail.com" style="color: #007bff; text-decoration: none;">support@gammy.com</a></p>
+    </footer>
+  </body>
+</html>
